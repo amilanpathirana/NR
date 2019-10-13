@@ -1,24 +1,21 @@
 # NewtonRapson Algorithm
 # By Amila Pathirana
 # Date 2019/10/13
-import sympy as sym
-
-i = -20
 
 
 def f(x):
-    return x**2-5*x-6
+    return x**2+1*x-42
 
 
 for i in range(-20, 21):
     x = i
-    F = (x*2)-5
+    F = (x*2)+1
 
     if(F == 0):
         print('No output for input: ', x)
         x = x+1
 
-    f1 = (x*2)-5
+    f1 = (x*2)+1
     tol = 100
     y = x - f(x)/(f1)
     count = 0
